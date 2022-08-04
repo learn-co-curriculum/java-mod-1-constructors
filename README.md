@@ -7,7 +7,7 @@
 
 ## Introduction
 
-A constructor is a specific kind of method that is called when an object is
+A **constructor** is a specific kind of method that is called when an object is
 instantiated. Constructors, like methods, can have parameters. Unlike methods,
 however, constructors do not have an explicit return type because they always
 return an object of the type of the class they are defined in.
@@ -35,12 +35,12 @@ now let's inspect the structure of this one constructor:
 
 1. As stated, the constructor does not specify a return type because it always
    returns an object of the type of the class it's defined in, so in this case
-   our constructor will return an object of type `Student`
+   our constructor will return an object of type `Student`.
 2. The `this` keyword is used to make a reference to the instance of the
    `Student` class that we are in the process of constructing. We need to use it
    here to make a distinction between the `firstName` variable that belongs to
    this instance we are building vs the `firstName` variable that was passed in
-   as a variable to the constructor
+   as a variable to the constructor.
 3. Using the `this` keyword, we initialize the value of the `firstName` variable
    of the `Student` instance we're building with the value of the `firstName`
    variable that was passed into the constructor. And we do the same thing with
@@ -64,9 +64,9 @@ public Student(String inputFirstName, String inputLastName) {
 }
 ```
 
-You might have noticed that neither version of the constructor we have shared so
-far assign any value to the `major` variable. This not good behaviors, as we
-should always try to be explicit about values for all our fields, include
+You might have noticed that neither version of the constructors we have shared so
+far assign any value to the `major` variable. This not a good behavior, as we
+should always try to be explicit about values for all our fields and include
 default values if none are provided through the constructor.
 
 There are 2 important things to note here:
@@ -90,9 +90,9 @@ public Student(String firstName, String lastName) {
 }
 ```
 
-As we mentioned before, we also have the ability to have multiple constructors
+We also have the ability to have multiple constructors
 in a single class. In this example, we can add a constructor that accepts a
-declared major in additional to the student's first and last name:
+declared major in addition to the student's first and last name:
 
 ```java
     public Student(String firstName, String lastName) {
@@ -108,5 +108,5 @@ declared major in additional to the student's first and last name:
 ```
 
 Note that the new constructor makes use of the previously defined constructor to
-initialized the two fields that were already supported and then proceeds to
+initialize the two fields that were already supported and then proceeds to
 initialize the additional field for which it received a value as a parameter.
