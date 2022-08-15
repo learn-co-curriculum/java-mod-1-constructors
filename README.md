@@ -64,8 +64,8 @@ public Student(String inputFirstName, String inputLastName) {
 }
 ```
 
-You might have noticed that neither version of the constructors we have shared so
-far assign any value to the `major` variable. This not a good behavior, as we
+You might have noticed that neither version of the constructors we have shared
+so far assign any value to the `major` variable. This not a good behavior, as we
 should always try to be explicit about values for all our fields and include
 default values if none are provided through the constructor.
 
